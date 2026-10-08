@@ -1,0 +1,134 @@
+/* ============================================================
+   PawStay 毛孩驿站 · 设计系统 v2（Clay 黏土质感）
+   暖珊瑚 × 奶油底 × 墨色文字 · 大圆角 · 双层柔和阴影 · SVG 插画
+   ============================================================ */
+
+:root {
+  /* 品牌色板 */
+  --brand: #FF6B3D;
+  --brand-deep: #F4511E;
+  --brand-soft: #FFE9DE;
+  --brand-mist: #FFF6F0;
+  --sun: #FFB637;
+  --mint: #3FA482;
+  --mint-soft: #E2F5EC;
+  --sky: #4A8FE0;
+  --sky-soft: #E9F1FE;
+  --rose: #F0699A;
+  --rose-soft: #FEEBF2;
+  --ink: #33302C;
+  --ink-2: #6F675F;
+  --ink-3: #A69C92;
+  --bg: #F7F1EA;
+  --card: #FFFFFF;
+  --line: #F1E7DD;
+
+  /* Clay 质感：内高光 + 外暖影 */
+  --clay: 0 1px 0 rgba(255, 255, 255, .9) inset, 0 10px 26px -10px rgba(190, 106, 58, .16);
+  --clay-lg: 0 1px 0 rgba(255, 255, 255, .9) inset, 0 18px 40px -14px rgba(190, 106, 58, .28);
+  --clay-brand: 0 8px 20px -6px rgba(244, 81, 30, .45), 0 2px 0 rgba(255, 255, 255, .35) inset;
+
+  --r-lg: 24px;
+  --r-md: 18px;
+  --r-sm: 12px;
+
+  /* Vant 主题接入 */
+  --van-primary-color: var(--brand);
+  --van-text-color: var(--ink);
+  --van-background: var(--bg);
+  --van-nav-bar-background: transparent;
+  --van-nav-bar-title-font-size: 17px;
+  --van-nav-bar-title-font-weight: 700;
+  --van-nav-bar-icon-color: var(--ink);
+  --van-nav-bar-text-color: var(--ink);
+  --van-search-background: transparent;
+  --van-tabbar-background: #fff;
+  --van-tabbar-item-active-color: var(--brand);
+  --van-cell-group-inset-radius: var(--r-md);
+  --van-field-label-color: var(--ink-2);
+  --van-rate-icon-full-color: var(--sun);
+  --van-calendar-confirm-button-height: 40px;
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'MiSans', 'HarmonyOS Sans SC', 'Microsoft YaHei UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page { min-height: 100vh; padding-bottom: calc(70px + env(safe-area-inset-bottom)); }
+.page-plain { min-height: 100vh; }
+
+/* ---------- 卡片 ---------- */
+.clay {
+  background: var(--card);
+  border-radius: var(--r-md);
+  box-shadow: var(--clay);
+}
+.clay-lg { border-radius: var(--r-lg); box-shadow: var(--clay-lg); }
+
+/* 按压反馈（黏土手感） */
+.press { transition: transform .18s ease, box-shadow .18s ease; cursor: pointer; }
+.press:active { transform: scale(.965); }
+
+/* ---------- 文本 ---------- */
+.h1 { font-size: 21px; font-weight: 800; letter-spacing: .3px; }
+.h2 { font-size: 16px; font-weight: 800; }
+.num { font-variant-numeric: tabular-nums; }
+.sub { color: var(--ink-3); font-size: 12px; }
+.sub2 { color: var(--ink-2); font-size: 13px; }
+
+.price { color: var(--brand-deep); font-weight: 800; }
+.price i { font-style: normal; font-weight: 500; color: var(--ink-3); font-size: 11px; }
+
+/* 区块标题：爪印圆点 */
+.sec {
+  display: flex; align-items: center; gap: 8px;
+  margin: 22px 20px 10px; font-size: 16px; font-weight: 800;
+}
+.sec::before {
+  content: ''; width: 8px; height: 8px; border-radius: 50%;
+  background: var(--brand); box-shadow: 0 0 0 4px var(--brand-soft);
+}
+
+/* ---------- 标签 ---------- */
+.chip {
+  display: inline-flex; align-items: center; gap: 3px;
+  padding: 3px 9px; border-radius: 999px;
+  font-size: 11.5px; font-weight: 600; line-height: 1.5;
+}
+.chip-warm { background: var(--brand-soft); color: var(--brand-deep); }
+.chip-mint { background: var(--mint-soft); color: var(--mint); }
+.chip-sky { background: var(--sky-soft); color: var(--sky); }
+.chip-rose { background: var(--rose-soft); color: var(--rose); }
+.chip-gray { background: #F2ECE5; color: var(--ink-2); }
+
+/* ---------- 通用 ---------- */
+.hero-gradient {
+  background-image:
+    radial-gradient(rgba(255, 255, 255, .15) 1.5px, transparent 1.5px),
+    radial-gradient(120% 90% at 85% -10%, #FFC08A 0%, rgba(255, 192, 138, 0) 55%),
+    linear-gradient(155deg, #FF9A62 0%, #FF6B3D 60%, #F4511E 100%);
+  background-size: 18px 18px, auto, auto;
+  color: #fff;
+}
+
+.btn-main {
+  width: calc(100% - 40px); margin: 22px 20px 0;
+  font-weight: 800; letter-spacing: 1px;
+  box-shadow: var(--clay-brand);
+}
+
+.empty-wrap { padding: 40px 0 20px; }
+
+/* 骨架微光 */
+@keyframes shimmer { 0% { opacity: .55; } 50% { opacity: 1; } 100% { opacity: .55; } }
+.breathing { animation: shimmer 2.4s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .press, .breathing { transition: none; animation: none; }
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260">
+  <!-- VIP宠物套房：深紫金奢华调 + 大床 + 吊灯 + 皇冠狗，高端感 -->
+  <rect width="400" height="260" rx="14" fill="#EFE9F5"/>
+  <rect y="200" width="400" height="60" fill="#5B4A70"/>
+  <line x1="0" y1="200" x2="400" y2="200" stroke="#8A75A8" stroke-width="6"/>
+  <!-- 壁灯×2 -->
+  <circle cx="56" cy="120" r="12" fill="#F4DFA0"/>
+  <path d="M44 124 l-6 26 h24 l-6 -26" fill="#D8C088"/>
+  <circle cx="344" cy="120" r="12" fill="#F4DFA0"/>
+  <path d="M332 124 l-6 26 h24 l-6 -26" fill="#D8C088"/>
+  <!-- 大吊灯 -->
+  <line x1="200" y1="0" x2="200" y2="26" stroke="#C9A96A" stroke-width="3"/>
+  <path d="M178 40 h44 l-6 14 h-32 z" fill="#C9A96A"/>
+  <circle cx="200" cy="58" r="14" fill="#F9E9B8"/>
+  <!-- 床（带床头） -->
+  <rect x="60" y="128" width="280" height="52" rx="12" fill="#7A6492"/>
+  <rect x="70" y="120" width="260" height="16" rx="8" fill="#8A75A8"/>
+  <rect x="66" y="150" width="268" height="30" rx="10" fill="#fff"/>
+  <path d="M80 180 h240 v16 a8 8 0 0 1 -8 8 h-224 a8 8 0 0 1 -8 -8 z" fill="#C9B8DE"/>
+  <!-- 皇冠狗 -->
+  <circle cx="140" cy="98" r="22" fill="#E8C396"/>
+  <circle cx="140" cy="72" r="16" fill="#E8C396"/>
+  <path d="M122 66 l-10 -20 l10 8 l18 -12 l18 12 l10 -8 l-10 20 z" fill="#F2C94C"/>
+  <circle cx="124" cy="84" r="2" fill="#D4A05A"/>
+  <circle cx="156" cy="84" r="2" fill="#D4A05A"/>
+  <circle cx="134" cy="76" r="2.2" fill="#333"/>
+  <circle cx="146" cy="76" r="2.2" fill="#333"/>
+</svg>

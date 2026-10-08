@@ -1,0 +1,84 @@
+/* ============================================================
+   猫狗宠物寄养系统 设计系统（鼠尾草绿 · 温暖自然干净轻盈）
+   ============================================================ */
+:root {
+  --pc-bg: #F7F5F0;
+  --pc-primary: #6FA58B;
+  --pc-primary-deep: #5A8F76;
+  --pc-primary-soft: #EAF2ED;
+  --pc-accent: #F3A65A;
+  --pc-accent-soft: #FBEEDD;
+  --pc-danger: #D96C61;
+  --pc-danger-soft: #F9E8E6;
+  --pc-ink: #303633;
+  --pc-ink-2: #7B827D;
+  --pc-line: #E8E6DF;
+  --pc-card: #FFFFFF;
+
+  --el-color-primary: #6FA58B;
+  --el-color-primary-light-3: #8FB8A2;
+  --el-color-primary-light-5: #A8C8B5;
+  --el-color-primary-light-7: #C9DECF;
+  --el-color-primary-light-8: #DAE9DF;
+  --el-color-primary-light-9: #EAF2ED;
+  --el-color-primary-dark-2: #5A8F76;
+  --el-color-danger: #D96C61;
+  --el-color-warning: #F3A65A;
+  --el-border-radius-base: 10px;
+  --el-font-family: 'Inter', 'HarmonyOS Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--pc-bg);
+  color: var(--pc-ink);
+  font-family: var(--el-font-family);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 { margin: 0; }
+.num { font-variant-numeric: tabular-nums; }
+
+/* 轻阴影卡片 */
+.pc-card {
+  background: var(--pc-card);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 1px 2px rgba(48,54,51,.04), 0 8px 20px -12px rgba(48,54,51,.10);
+}
+.pc-card-md { border-radius: 12px; padding: 16px; background: #fff;
+  box-shadow: 0 1px 2px rgba(48,54,51,.04), 0 6px 16px -10px rgba(48,54,51,.10); }
+
+.hoverable { transition: transform .2s ease, box-shadow .2s ease; cursor: pointer; }
+.hoverable:hover { transform: translateY(-2px); box-shadow: 0 12px 26px -12px rgba(48,54,51,.18); }
+
+.page-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.page-title { font-size: 20px; font-weight: 800; }
+.page-desc { color: var(--pc-ink-2); font-size: 13px; margin-top: 4px; }
+
+.sub { color: var(--pc-ink-2); font-size: 12px; }
+.price { color: var(--pc-accent); font-weight: 800; }
+
+.el-table { --el-table-header-bg-color: #F2F0EA; --el-table-header-text-color: #7B827D; }
+.el-table th.el-table__cell { font-weight: 700; }
+.el-tag { border: none; font-weight: 600; }
+.el-dialog__title, .el-drawer__title { font-weight: 800; }
+
+/* ---- 驾驶舱统计卡 ---- */
+.stat-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+.stat-card { background: #fff; border-radius: 16px; padding: 16px 18px; display: flex;
+  align-items: center; gap: 14px; box-shadow: 0 1px 2px rgba(48,54,51,.04), 0 8px 20px -12px rgba(48,54,51,.1);
+  transition: transform .2s, box-shadow .2s; }
+.stat-card:hover { transform: translateY(-3px); box-shadow: 0 14px 30px -14px rgba(48,54,51,.18); }
+.stat-icon { width: 46px; height: 46px; border-radius: 14px; display: flex; align-items: center;
+  justify-content: center; color: #fff; flex-shrink: 0; }
+.st-gold { background: linear-gradient(135deg, #F5B461, #E89B3C); }
+.st-green { background: linear-gradient(135deg, #7FB89A, #5A8F76); }
+.st-blue { background: linear-gradient(135deg, #7FA8D9, #5A86B8); }
+.st-gray { background: linear-gradient(135deg, #A8B0AA, #7B827D); }
+.st-red { background: linear-gradient(135deg, #E8A09A, #D96C61); }
+.stat-value { font-size: 22px; font-weight: 900; color: var(--pc-ink); line-height: 1.2; }
+.stat-unit { font-style: normal; font-size: 12px; color: var(--pc-ink-3, #A69C92); font-weight: 600; }
+.stat-label { font-size: 12px; color: var(--pc-ink-2); margin-top: 3px; }

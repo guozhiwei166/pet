@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260">
+  <!-- 猫·舒适房：暖粉 + 猫抓柱+平台+挂饰 -->
+  <rect width="400" height="260" rx="14" fill="#FDEFF0"/>
+  <rect y="200" width="400" height="60" fill="#D8AEB8"/>
+  <rect x="0" y="210" width="400" height="3" fill="#C79AA5"/>
+  <!-- 猫爬架树 -->
+  <rect x="52" y="86" width="24" height="114" rx="11" fill="#C08C5A"/>
+  <ellipse cx="64" cy="86" rx="44" ry="11" fill="#E8B4C0"/>
+  <ellipse cx="100" cy="72" rx="32" ry="9" fill="#DCA6B4"/>
+  <rect x="92" y="60" width="12" height="30" rx="5" fill="#C08C5A"/>
+  <!-- 白猫坐平台 -->
+  <ellipse cx="64" cy="60" rx="17" ry="11" fill="#EFE6F2"/>
+  <circle cx="64" cy="40" r="11" fill="#EFE6F2"/>
+  <path d="M55 33 l-4 -10 l8 5 z" fill="#EFE6F2"/>
+  <path d="M73 33 l4 -10 l-8 5 z" fill="#EFE6F2"/>
+  <circle cx="59" cy="39" r="1.6" fill="#5A4A55"/>
+  <circle cx="69" cy="39" r="1.6" fill="#5A4A55"/>
+  <!-- 铃铛挂饰 -->
+  <circle cx="200" cy="52" r="7" fill="#F2C94C"/>
+  <line x1="200" y1="20" x2="200" y2="45" stroke="#C9A96A" stroke-width="2"/>
+  <!-- 猫抓板 -->
+  <rect x="250" y="140" width="16" height="60" rx="6" fill="#CBB28C"/>
+  <!-- 软垫猫窝 -->
+  <ellipse cx="170" cy="192" rx="70" ry="16" fill="#F2D0DA"/>
+  <path d="M100 192 a70 40 0 0 1 140 0 z" fill="#E8B4C0"/>
+  <ellipse cx="170" cy="192" rx="44" ry="9" fill="#D89FB0"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260">
+  <!-- 标准房：米白墙 + 蓝灰地板 + 单犬窝，简约实用 -->
+  <rect width="400" height="260" rx="14" fill="#F6F3EE"/>
+  <rect y="200" width="400" height="60" fill="#D8D2C5"/>
+  <rect x="0" y="196" width="400" height="6" fill="#C4BCAD"/>
+  <!-- 窗户 -->
+  <rect x="270" y="40" width="90" height="72" rx="8" fill="#CDE3F0" stroke="#fff" stroke-width="6"/>
+  <line x1="315" y1="40" x2="315" y2="112" stroke="#fff" stroke-width="5"/>
+  <line x1="270" y1="76" x2="360" y2="76" stroke="#fff" stroke-width="5"/>
+  <!-- 犬窝 -->
+  <ellipse cx="130" cy="185" rx="86" ry="26" fill="#C9B8A0"/>
+  <path d="M44 185 a86 60 0 0 1 172 0 z" fill="#A88B6D"/>
+  <ellipse cx="130" cy="185" rx="56" ry="15" fill="#8B6F52"/>
+  <!-- 小狗坐姿 -->
+  <circle cx="160" cy="120" r="24" fill="#D9A05B"/>
+  <circle cx="160" cy="96" r="17" fill="#D9A05B"/>
+  <ellipse cx="150" cy="93" rx="5" ry="7" fill="#C0803C"/>
+  <ellipse cx="172" cy="93" rx="5" ry="7" fill="#C0803C"/>
+  <circle cx="154" cy="100" r="2.4" fill="#333"/>
+  <circle cx="167" cy="100" r="2.4" fill="#333"/>
+  <path d="M158 108 q3 4 6 0" stroke="#333" stroke-width="1.6" fill="none"/>
+  <!-- 食盆 -->
+  <ellipse cx="58" cy="196" rx="26" ry="8" fill="#9FB8AD"/>
+  <path d="M32 196 v10 a26 8 0 0 0 52 0 v-10" fill="#8AA79B"/>
+</svg>

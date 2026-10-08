@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>毛孩驿站 PawStay · 宠物寄养管理系统</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      background: #F7F1EA; color: #33302C; padding: 24px;
+    }
+    .wrap { max-width: 860px; width: 100%; }
+    .brand { text-align: center; margin-bottom: 34px; }
+    .logo { width: 72px; height: 72px; margin: 0 auto 14px; border-radius: 24px;
+      background: linear-gradient(140deg, #FF9A62, #FF6B3D); display: flex; align-items: center;
+      justify-content: center; box-shadow: 0 14px 30px -10px rgba(244, 81, 30, .45); }
+    h1 { font-size: 26px; font-weight: 800; letter-spacing: 1px; }
+    .sub { color: #A39A91; font-size: 14px; margin-top: 8px; }
+    .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    @media (max-width: 640px) { .cards { grid-template-columns: 1fr; } }
+    a.portal { display: block; background: #fff; border-radius: 24px; padding: 28px 26px;
+      text-decoration: none; color: inherit; border: 2px solid transparent;
+      box-shadow: 0 1px 0 rgba(255,255,255,.9) inset, 0 14px 30px -14px rgba(196,109,60,.25);
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+    a.portal:hover { transform: translateY(-4px); border-color: #FFD9C4;
+      box-shadow: 0 20px 40px -14px rgba(244, 81, 30, .3); }
+    .portal .emoji-tile { width: 54px; height: 54px; border-radius: 18px; display: flex;
+      align-items: center; justify-content: center; font-size: 26px; margin-bottom: 14px; }
+    .portal h2 { font-size: 19px; font-weight: 800; }
+    .portal p { color: #6F675F; font-size: 13px; margin-top: 6px; line-height: 1.7; }
+    .portal .go { display: inline-block; margin-top: 14px; font-weight: 700; font-size: 13px; }
+    .t1 { background: #FFE9DE; } .t1 + .go { color: #F4511E; }
+    .t2 { background: #E8F3FF; } .t2 + .go { color: #2E7CD6; }
+    .api-note { margin-top: 26px; text-align: center; color: #A39A91; font-size: 12px; line-height: 1.9; }
+    .api-note code { background: #fff; border-radius: 8px; padding: 2px 8px; color: #6F675F; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo">
+        <svg viewBox="0 0 24 24" width="40" height="40" fill="#fff">
+          <ellipse cx="7" cy="8.2" rx="2.1" ry="2.7"/>
+          <ellipse cx="17" cy="8.2" rx="2.1" ry="2.7"/>
+          <ellipse cx="3.6" cy="13" rx="1.9" ry="2.4"/>
+          <ellipse cx="20.4" cy="13" rx="1.9" ry="2.4"/>
+          <path d="M12 11c3.6 0 6.4 2.7 6.4 5.6 0 2.1-1.7 3.4-3.6 3.4-1.1 0-1.9-.4-2.8-.4-.9 0-1.7.4-2.8.4-1.9 0-3.6-1.3-3.6-3.4C5.6 13.7 8.4 11 12 11z"/>
+        </svg>
+      </div>
+      <h1>毛孩驿站 PawStay</h1>
+      <div class="sub">宠物寄养管理系统 · 本科毕业设计 —— 把毛孩子，托付给安心</div>
+    </div>
+
+    <div class="cards">
+      <a class="portal" href="http://localhost:5180">
+        <div class="emoji-tile t1">📱</div>
+        <h2>用户端 · 宠物主人</h2>
+        <p>找寄养商家、预约下单、每天查看寄养日记与体重健康曲线。<br />演示账号：13800000001 / 123456</p>
+        <span class="go">进入用户端 →</span>
+      </a>
+      <a class="portal" href="http://localhost:5181">
+        <div class="emoji-tile t2">🖥️</div>
+        <h2>商家端 / 平台管理端</h2>
+        <p>商家接单打卡、房型管理；平台审核商家、数据大屏。<br />商家 13900000001 · 管理员 10000000000 / 123456</p>
+        <span class="go">进入管理端 →</span>
+      </a>
+    </div>
+
+    <div class="api-note">
+      本页面是后端服务（<code>localhost:8081</code>），REST 接口以 <code>/api</code> 开头，如 <code>GET /api/home</code><br />
+      前端页面请从上方两个入口进入
+    </div>
+  </div>
+</body>
+</html>

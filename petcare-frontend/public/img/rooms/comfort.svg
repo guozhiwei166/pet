@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260">
+  <!-- 舒适房：暖橙墙 + 木地板 + 空调挂机 + 地毯犬窝，比标准房温馨 -->
+  <rect width="400" height="260" rx="14" fill="#FAEBDD"/>
+  <rect y="200" width="400" height="60" fill="#C89B6D"/>
+  <line x1="0" y1="210" x2="400" y2="210" stroke="#B4885B" stroke-width="2"/>
+  <line x1="0" y1="230" x2="400" y2="230" stroke="#B4885B" stroke-width="2"/>
+  <!-- 空调 -->
+  <rect x="40" y="36" width="72" height="30" rx="5" fill="#F2F5F7"/>
+  <line x1="48" y1="44" x2="104" y2="44" stroke="#CFDCE3" stroke-width="2"/>
+  <line x1="48" y1="50" x2="104" y2="50" stroke="#CFDCE3" stroke-width="2"/>
+  <rect x="88" y="42" width="18" height="14" rx="3" fill="#B9D6C2"/>
+  <!-- 挂画 -->
+  <rect x="296" y="52" width="64" height="48" rx="6" fill="#F2C94C" stroke="#E4B93C" stroke-width="4"/>
+  <circle cx="320" cy="76" r="10" fill="#fff"/>
+  <path d="M300 96 l16-14 12 10 10-8 22 20" stroke="#fff" stroke-width="3" fill="none"/>
+  <!-- 木地板犬窝 -->
+  <ellipse cx="150" cy="192" rx="95" ry="20" fill="#D9C7A8"/>
+  <path d="M55 192 a95 50 0 0 1 190 0 z" fill="#C9B290"/>
+  <ellipse cx="150" cy="192" rx="60" ry="12" fill="#B99E7A"/>
+  <path d="M70 192 h160" stroke="#A98C66" stroke-width="3"/>
+  <!-- 小狗侧躺 -->
+  <ellipse cx="180" cy="150" rx="30" ry="18" fill="#E8C396" transform="rotate(-8 180 150)"/>
+  <circle cx="206" cy="140" r="12" fill="#E8C396"/>
+  <path d="M214 130 q6 -10 14 -6 q-2 10 -10 10 z" fill="#E8C396"/>
+  <circle cx="207" cy="135" r="2" fill="#333"/>
+  <!-- 绿植 -->
+  <path d="M40 190 q6 -26 2 -44" stroke="#6FA58B" stroke-width="4" fill="none"/>
+  <path d="M52 190 q0 -28 -8 -44" stroke="#5E9578" stroke-width="4" fill="none"/>
+  <path d="M46 190 q14 -24 20 -40" stroke="#7DB598" stroke-width="4" fill="none"/>
+  <rect x="32" y="186" width="30" height="16" rx="4" fill="#B98E63"/>
+</svg>

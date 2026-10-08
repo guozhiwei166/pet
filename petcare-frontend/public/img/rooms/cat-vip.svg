@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260">
+  <!-- 猫·VIP套房：紫金奢华 + 大软床 + 猫爬乐园 + 皇冠猫 -->
+  <rect width="400" height="260" rx="14" fill="#EFE6F5"/>
+  <rect y="200" width="400" height="60" fill="#5B4A70"/>
+  <line x1="0" y1="200" x2="400" y2="200" stroke="#8A75A8" stroke-width="6"/>
+  <!-- 壁灯 -->
+  <circle cx="52" cy="118" r="11" fill="#F4DFA0"/>
+  <path d="M41 122 l-5 24 h22 l-5 -24" fill="#D8C088"/>
+  <circle cx="348" cy="118" r="11" fill="#F4DFA0"/>
+  <path d="M337 122 l-5 24 h22 l-5 -24" fill="#D8C088"/>
+  <!-- 猫爬乐园 -->
+  <rect x="44" y="120" width="14" height="80" rx="7" fill="#C08C5A"/>
+  <ellipse cx="51" cy="120" rx="30" ry="8" fill="#C9B8DE"/>
+  <rect x="80" y="150" width="12" height="50" rx="6" fill="#C08C5A"/>
+  <ellipse cx="86" cy="150" rx="26" ry="7" fill="#B39FD1"/>
+  <!-- 皇冠猫 -->
+  <circle cx="86" cy="128" r="16" fill="#EFE6F2"/>
+  <path d="M71 118 l-8 -18 l9 7 l14 -10 l14 10 l9 -7 l-8 18 z" fill="#F2C94C"/>
+  <circle cx="80" cy="127" r="2" fill="#5A4A55"/>
+  <circle cx="92" cy="127" r="2" fill="#5A4A55"/>
+  <ellipse cx="86" cy="130" rx="14" ry="9" fill="#EFE6F2"/>
+  <!-- 大软床 -->
+  <rect x="150" y="140" width="190" height="42" rx="10" fill="#7A6492"/>
+  <rect x="158" y="133" width="174" height="13" rx="6" fill="#8A75A8"/>
+  <rect x="154" y="158" width="182" height="24" rx="9" fill="#fff"/>
+  <path d="M160 182 h170 v10 a6 6 0 0 1 -6 6 h-158 a6 6 0 0 1 -6 -6 z" fill="#C9B8DE"/>
+  <!-- 蝴蝶结抱枕 -->
+  <circle cx="300" cy="140" r="12" fill="#F4C6D0"/>
+  <path d="M290 130 l-8 -6 l4 12 l-4 12 l8 -6" fill="#E8ACBA"/>
+  <path d="M310 130 l8 -6 l-4 12 l4 12 l-8 -6" fill="#E8ACBA"/>
+</svg>

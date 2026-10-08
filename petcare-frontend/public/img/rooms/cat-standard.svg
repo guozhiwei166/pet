@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260">
+  <!-- 猫·标准房：淡粉墙 + 猫爬柱 + 猫碗，简约 -->
+  <rect width="400" height="260" rx="14" fill="#FBEFF2"/>
+  <rect y="200" width="400" height="60" fill="#E3C9CF"/>
+  <rect x="0" y="196" width="400" height="6" fill="#D5B4BC"/>
+  <rect x="270" y="40" width="90" height="72" rx="8" fill="#CDE3F0" stroke="#fff" stroke-width="6"/>
+  <line x1="315" y1="40" x2="315" y2="112" stroke="#fff" stroke-width="5"/>
+  <!-- 猫爬柱 -->
+  <rect x="60" y="90" width="20" height="110" rx="9" fill="#C89B6D"/>
+  <ellipse cx="70" cy="90" rx="40" ry="10" fill="#E8B4C0"/>
+  <!-- 坐猫 -->
+  <ellipse cx="70" cy="66" rx="18" ry="12" fill="#B9A7C4"/>
+  <circle cx="70" cy="46" r="11" fill="#B9A7C4"/>
+  <path d="M61 39 l-3 -11 l8 6 z" fill="#B9A7C4"/>
+  <path d="M79 39 l3 -11 l-8 6 z" fill="#B9A7C4"/>
+  <circle cx="65" cy="45" r="1.7" fill="#3A2A35"/>
+  <circle cx="75" cy="45" r="1.7" fill="#3A2A35"/>
+  <!-- 猫碗 -->
+  <ellipse cx="180" cy="196" rx="26" ry="8" fill="#F4C6D0"/>
+  <path d="M154 196 v10 a26 8 0 0 0 52 0 v-10" fill="#E8ACBA"/>
+  <!-- 毛线球 -->
+  <circle cx="250" cy="196" r="14" fill="#C9B8DE"/>
+</svg>

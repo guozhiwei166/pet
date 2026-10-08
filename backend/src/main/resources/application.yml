@@ -1,0 +1,20 @@
+server:
+  port: 8081   # 8080 已被本机其他程序占用，本项目使用 8081
+
+spring:
+  profiles:
+    active: mysql   # 默认使用本机 MySQL；无 MySQL 环境时改为 h2 即可离线运行
+  jackson:
+    time-zone: GMT+8
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    banner: false
+    db-config:
+      id-type: auto

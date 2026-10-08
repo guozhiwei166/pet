@@ -1,0 +1,36 @@
+# Java / Maven
+petcare-backend/target/
+backend/target/
+*.class
+
+# Node
+node_modules/
+petcare-frontend/dist/
+h5/dist/
+console/dist/
+
+# 上传文件
+upload/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 日志与临时
+*.log
+logs/
+*.tmp
+
+# 本地环境
+.env
+.env.local
+
+# AI 审查/会话缓存
+.mimosa/
+.workbuddy/
+*.code-workspace

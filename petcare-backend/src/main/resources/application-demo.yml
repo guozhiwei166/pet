@@ -1,0 +1,10 @@
+# Demo 演示档：启动时重建表并灌入演示数据（仅用于恢复演示环境）
+# 用法: mvn spring-boot:run -Dspring-boot.run.profiles=demo
+# 启动完成后数据即持久保存（主配置 sql.init.mode=never，不会每次重建）
+spring:
+  sql:
+    init:
+      mode: always
+      encoding: utf-8
+      schema-locations: classpath:db/01-schema.sql
+      data-locations: classpath:db/02-seed.sql
